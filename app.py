@@ -9,7 +9,7 @@ load_dotenv()
 
 # Initialize ChatGroq LLM
 llm = ChatGroq(
-    
+    groq_api_key=st.secrets["GROQ_API_KEY"],
     model=model,  # you can swap to mixtral if needed
     temperature=temperature,
     max_tokens=max_tokens
